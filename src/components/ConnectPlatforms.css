@@ -1,0 +1,204 @@
+.connect-platforms-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 2rem;
+}
+
+.connect-platforms-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.connect-platforms-header h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.connect-platforms-header p {
+  color: #666;
+}
+
+.connect-platforms-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.platforms-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.platform-input {
+  margin-bottom: 1.5rem;
+}
+
+.platform-input label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #FF4B2B;
+}
+
+.verify-btn {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.verify-btn:hover {
+  background-color: #45a049;
+}
+
+.status {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.status.success {
+  color: #4CAF50;
+}
+
+.status.error {
+  color: #f44336;
+}
+
+.platform-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.submit-btn {
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.submit-btn.active {
+  background-color: #FF4B2B;
+  color: white;
+  border: none;
+}
+
+.submit-btn.disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.submit-btn.active:hover {
+  background-color: #FF416C;
+}
+
+.skip-btn {
+  padding: 0.8rem;
+  background: transparent;
+  border: 1px solid #FF4B2B;
+  color: #FF4B2B;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.skip-btn:hover {
+  background: rgba(255, 75, 43, 0.1);
+}
+
+@media (max-width: 480px) {
+  .input-group {
+    flex-direction: column;
+  }
+  
+  .verify-btn {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}
+
+.platform-selection {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.platform-selection h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.platform-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.platform-checkbox:hover {
+  background-color: #f5f5f5;
+}
+
+.platform-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.platform-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.platform-checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.platform-checkboxes input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+} 

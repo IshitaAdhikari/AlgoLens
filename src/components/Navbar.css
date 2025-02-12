@@ -1,0 +1,77 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FF4B2B;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.login-button {
+  padding: 0.5rem 1.5rem;
+  background: #FF4B2B;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background: #FF416C;
+}
+
+.profile-button {
+  padding: 0.8rem 1.8rem;
+  border: 2px solid #FF4B2B;
+  color: #FF4B2B;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.profile-button:hover {
+  background: rgba(255, 75, 43, 0.1);
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  .login-button, .profile-button {
+    padding: 0.6rem 1.2rem;
+  }
+} 

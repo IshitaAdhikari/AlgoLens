@@ -1,0 +1,110 @@
+.signup-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.signup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.signup-header nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.signup-header nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.signup-header .login-btn {
+  padding: 0.5rem 1rem;
+  background-color: #FF4B2B;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.signup-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: calc(100vh - 70px);
+}
+
+.signup-form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.signup-form-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #FF4B2B;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #FF4B2B;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #FF416C;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}
+
+.login-link a {
+  color: #FF4B2B;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+} 
